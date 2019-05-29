@@ -1,0 +1,61 @@
+    /*The CSS example*/
+    
+    .item {
+        padding: 100px;
+        color: white;
+        width: 70px;
+        text-align: center;
+        font-size: 2em;
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    
+    .square {
+        width: 60%;
+    }
+    
+    .blue {
+        background-color: rgb(173, 171, 169);
+        grid-column: 2;
+        justify-self: left;
+    }
+    
+    .orange {
+        background-color: #343a40;
+        grid-column: 1;
+        justify-self: right;
+    }
+    
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(90deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    /* .orange:hover,
+    .green:hover,
+    .pink:hover,
+    .blue:hover {
+        animation: App-logo-spin 240ms linear;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        box-shadow: 0px 0px 10px 10px white;
+        -webkit-box-shadow: 0px 0px 10px 10px white;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    } */
+    
+    .pink {
+        background-color: #FC797A;
+        grid-column: 2;
+        justify-self: left;
+    }
+    
+    .green {
+        background-color: #4ebddf;
+        grid-column: 1;
+        justify-self: right;
+    }

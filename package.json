@@ -1,0 +1,19 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Mi portafolio",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lore0223/Portafolio.git"
+  },
+  "author": "Lorena Guido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lore0223/Portafolio/issues"
+  },
+  "homepage": "https://github.com/lore0223/Portafolio#readme"
+}
