@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Ribeye&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
 .init {
-    background: #FFFFCC;
+    background: #F2DCC2;
 }
 
 .page-aboutme {
-    background: #FFFFCC;
+    background: #F2DCC2;
     background-size: cover;
 }
 
@@ -14,10 +15,19 @@
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 15% 70% auto;
-    background: #FFFFCC;
+    background: #F2DCC2;
     z-index: 2;
     width: 100%;
     height: 100vh;
+    margin-top: -3%;
+}
+
+.typewrite {
+    font-weight: 700;
+}
+
+#link {
+    color: #A64468;
 }
 
 #photo {
@@ -29,24 +39,15 @@
     margin-left: 8%;
 }
 
-#name {
-    margin-left: 36%;
-    font-family: 'Ribeye', cursive;
-    color: #8c6239;
-    font-weight: 700;
-    font-size: 300%;
-    margin-top: 2%;
-    display: inline-block;
-}
-
-#gif-lap {
-    display: block;
-    margin: auto;
-}
-
 .navbar-lore {
     margin-left: 45%;
     font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    position: fixed;
+}
+
+.nav-color {
+    color: #A64468;
 }
 
 .animation-box {
@@ -67,87 +68,13 @@
     margin-left: 8%;
 }
 
-.slideExpandUp {
-    animation-name: slideExpandUp;
-    -webkit-animation-name: slideExpandUp;
-    animation-duration: 1.6s;
-    -webkit-animation-duration: 1.6s;
-    animation-timing-function: ease-out;
-    -webkit-animation-timing-function: ease -out;
-    visibility: visible !important;
-}
-
-@keyframes slideExpandUp {
-    0% {
-        transform: translateY(100%) scaleX(0.5);
-    }
-    30% {
-        transform: translateY(-8%) scaleX(0.5);
-    }
-    40% {
-        transform: translateY(2%) scaleX(0.5);
-    }
-    50% {
-        transform: translateY(0%) scaleX(1.1);
-    }
-    60% {
-        transform: translateY(0%) scaleX(0.9);
-    }
-    70% {
-        transform: translateY(0%) scaleX(1.05);
-    }
-    80% {
-        transform: translateY(0%) scaleX(0.95);
-    }
-    90% {
-        transform: translateY(0%) scaleX(1.02);
-    }
-    100% {
-        transform: translateY(0%) scaleX(1);
-    }
-}
-
-@-webkit-keyframes slideExpandUp {
-    0% {
-        -webkit-transform: translateY(100%) scaleX(0.5);
-    }
-    30% {
-        -webkit-transform: translateY(-8%) scaleX(0.5);
-    }
-    40% {
-        -webkit-transform: translateY(2%) scaleX(0.5);
-    }
-    50% {
-        -webkit-transform: translateY(0%) scaleX(1.1);
-    }
-    60% {
-        -webkit-transform: translateY(0%) scaleX(0.9);
-    }
-    70% {
-        -webkit-transform: translateY(0%) scaleX(1.05);
-    }
-    80% {
-        -webkit-transform: translateY(0%) scaleX(0.95);
-    }
-    90% {
-        -webkit-transform: translateY(0%) scaleX(1.02);
-    }
-    100% {
-        -webkit-transform: translateY(0%) scaleX(1);
-    }
-}
-
 #proyects {
-    background: #FFFFCC;
+    width: 100%;
+    height: 100vh;
+    background: #F2DCC2;
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-rows: 50% auto;
-}
-
-.logo-b-queen-fondo {
-    background: white;
-    margin-top: -16%;
-    border-radius: 17%;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 5% 45% 5% auto 5%;
 }
 
 .pokesaurius {
@@ -156,15 +83,182 @@
 }
 
 .cyber {
+    z-index: 2;
     font-family: 'Pacifico', cursive;
-    color: #20131f;
-    font-size: 40px;
+    font-size: 20px;
+    color: #F2DCC2;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: right;
+    margin-top: 29%;
 }
 
-.sobre {
-    width: 60%;
+.img-cipher,
+.log-tej,
+.img-bq,
+.pokemon-img {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 50%;
+    border-radius: 3%;
+    opacity: 0.8;
 }
 
-.log-tej {
-    border-radius: 15%;
+.square {
+    width: 80%;
+    background: #363940;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 5% 45% 5% auto 5%;
+    justify-self: center;
+    border-radius: 3%;
+}
+
+.burgerq {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.datalovers {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.cipher {
+    grid-column: 2;
+    grid-row: 4;
+    margin-bottom: -5%;
+}
+
+.social-net {
+    grid-column: 3;
+    grid-row: 4;
+    margin-bottom: -5%;
+}
+
+.description {
+    grid-column: 2;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 75% auto
+}
+
+.button-demo {
+    grid-column: 1;
+    grid-row: 2;
+    background: #A64468;
+    margin-right: 3%;
+    border: 0;
+    border-radius: 6%;
+}
+
+.button-cod {
+    grid-column: 2;
+    grid-row: 2;
+    background: #A64468;
+    margin-left: 3%;
+    border: 0;
+    border-radius: 6%;
+}
+
+#poke-logo {
+    z-index: 2;
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 30%;
+    justify-self: right;
+    width: 51%;
+}
+
+#pokemon-img {
+    width: 100%;
+    grid-row: 2;
+    grid-column: 2;
+    opacity: 0.8;
+    border-radius: 3%;
+}
+
+.b-desc {
+    font-size: 14px;
+    color: #F0F2BD;
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 3%;
+    line-height: 18px;
+}
+
+.link-b {
+    color: #F0F2BD;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 5% 20% 32% 32% auto;
+    background: #F2DCC2;
+    height: 100vh;
+}
+
+#title {
+    font-family: 'Poiret One', cursive;
+    font-size: 80px;
+    grid-row: 2;
+    justify-self: center;
+    grid-column: 3/5;
+    font-weight: bold;
+    color: #A64468;
+    text-decoration: underline #A64468;
+}
+
+.single-tools-1 {
+    grid-row: 3;
+    width: 56%;
+    background: #363940;
+    justify-self: center;
+}
+
+.single-tools-2 {
+    grid-row: 4;
+    width: 56%;
+    background: #363940;
+    justify-self: center;
+}
+
+.js,
+.fire {
+    grid-column: 2;
+}
+
+.html,
+.boot {
+    grid-column: 3;
+}
+
+.css,
+.github {
+    grid-column: 4;
+}
+
+.angu,
+.git {
+    grid-column: 5;
+}
+
+.contact {
+    background: #A64468;
+    font-family: 'Raleway', sans-serif;
+    color: #F2DCC2;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+    background: #F2DCC2;
+    color: #A64468;
 }

@@ -24,35 +24,35 @@
         <div class="collapse navbar-collapse navbar-lore" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#page-about-lors">Acerca de mi<span class="sr-only">(current)</span></a>
+                    <a class="nav-link nav-color" href="#page-about-lors">Acerca de mi<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-color">
                     <a class="nav-link" href="#proyects">Proyectos</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Herramientas</a>
+                <li class="nav-item ">
+                    <a class="nav-link nav-color" href="#tools-page">Herramientas</a>
                 </li>
 
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown nav-color">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Platiquemos
                       </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./assets/lorena Guido.png">CV</a>
-                        <!-- <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="./assets/lorena Guido.png">Mi CV</a>
+                        <a class="dropdown-item" href="#footer">Contáctame</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a> -->
+
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <section class="init" id="home">
+    <!-- <section class="init" id="home">
 
         <img id="gif-lap" src="./assets/responsivelap.gif" alt="gif-lap">
 
-    </section>
+    </section> -->
     <hr>
     <main class="page-aboutme" id="page-about-lors">
 
@@ -60,7 +60,12 @@
             <section class="animation-box slideExpandUp">
                 <img id="photo" width="300px" src="./assets/lore2.jpg"></img>
                 <article class="litte-description">
-                    <p>Soy Lorena Guido. Developer decidida, autodidacta y dinámica. <br> Escogí desarrollo web porque me gustan los retos,<br> entender cómo y porqué funciona la tecnología que utilizamos,
+                    <h1>
+                        <a id="link" href="" class="typewrite" data-period="2000" data-type='[ "Hola, soy Lorena Guido.", "Developer decidida.", "Autodidacta.", "Dinámica." ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <p> Escogí desarrollo web porque me gustan los retos,<br> entender cómo y por qué funciona la tecnología que utilizamos,
                         <br> así cómo crear productos enfocados a mejorar la experiencia del usuario. <br>
                     </p>
                     <p>
@@ -68,8 +73,7 @@
                         a las personas en mi entorno para que descubran su potencial.
                     </p>
                     <p>
-                        Estar al frente de proyectos que representan un reto en análisis,<br> planeación y ejecución es mi pasión, por lo que aprovecho la estructura <br> y organización que posibilitan las metodologías ágiles para optimizar <br> el tiempo
-                        en el logro de objetivos.
+                        Mi pasión es estar al frente de proyectos que representan un reto en análisis,<br> planeación y ejecución.
 
                     </p>
                 </article>
@@ -81,57 +85,100 @@
 
     <main id="proyects">
 
-        <div class="item orange square burgerq">
-            <div class="logo-b-queen-fondo">
-                <img src="./assets/descarga.png" alt="logo-bq">
+        <div class=" burgerq square">
+
+            <img width="100%" src="./assets/com-rap.jpg" class="img-bq">
+
+            <div class="description">
+                <p class="b-desc">Burger Queen es mi primera interacción con un Framework de JS, aprendí Angular, Type Script y CSS Grids, utilizé HTML 5.</p>
+                <button class="button-demo"><a class="link-b" href="https://burger-queen-36737.firebaseapp.com" target=»_blank>Demo</a></button>
+                <button class="button-cod"><a class="link-b" href="https://github.com/lore0223/CDMX007-fe-burger-queen.git" target=»_blank>Código</a></button>
             </div>
-            <a href="https://burger-queen-36737.firebaseapp.com">demo</a>
-            <a href="https://github.com/lore0223/CDMX007-fe-burger-queen.git">código</a>
 
         </div>
-        <div class="item pink square datalovers">
-            <div class="pokesaurius">
-                <img src="./assets/pokesaurius_logo_2cm.png">
-                <img src="./assets/poke-ball-button_2.png">
+
+        <div class=" datalovers square">
+
+            <img id="poke-logo" src="./assets/pokesaurius_logo_2cm.png">
+            <img class="pokemon-img" src="./assets/pokemon.png">
+
+            <div class="description">
+                <p class="b-desc">Pokesaurius está desarrollado en Vanilla Js,aprendí a manipular objetos y arreglos, consumir API's, y hacer un diseño responsive.
+                </p>
+                <button class="button-demo"><a class="link-b" href="https://lore0223.github.io/https-github.com-lore0223-cdmx-2019-01-bc-core-data-lovers/src/" target=»_blank>Demo</a></button>
+                <button class="button-cod"><a class="link-b" href="https://github.com/lore0223/https-github.com-lore0223-cdmx-2019-01-bc-core-data-lovers.git" target=»_blank>Código</a> </button>
             </div>
-            <a href="https://lore0223.github.io/https-github.com-lore0223-cdmx-2019-01-bc-core-data-lovers/src/">demo</a>
-            <a href="https://github.com/lore0223/https-github.com-lore0223-cdmx-2019-01-bc-core-data-lovers.git">código</a>
 
         </div>
-        <div class="item green square social-net">
+
+        <div class="social-net square">
+
             <img width="100%" class="log-tej" src="./assets/logo-red.png" alt="logo-red-social">
-            <a href="https://tejiendo-en-azul.firebaseapp.com/">demo</a>
-            <a href="//github.com/lore0223/CDMX007-social-network.git">código</a>
 
+            <div class="description">
+                <p class="b-desc">Tejiendo en azul fue un reto, aprendí a utilizar firebase, autenticación, base de datos en realtime y hosting.(Estoy trabajando en mejorar su interfaz.)</p>
+                <button class="button-demo"><a class="link-b" href="https://tejiendo-en-azul.firebaseapp.com/" target=»_blank>Demo</a> </button>
+                <button class="button-cod"><a class="link-b"  href="//github.com/lore0223/CDMX007-social-network.git" target=»_blank>Código</a> </button>
+            </div>
 
         </div>
-        <div class="item blue square cipher">
+
+
+        <div class="cipher square">
             <span class="cyber">"Cyber Secrets"</span>
-            <img class="sobre" src="./assets/icons8-mensaje-64.png" alt="mnsj">
-            <a href="https://lore0223.github.io/cdmx-2019-01-bc-core-am-cipher/src/">demo</a>
-            <a href="https://github.com/lore0223/cdmx-2019-01-bc-core-am-cipher.git">código</a>
+            <img class="img-cipher" src="./assets/cypher.jpg" alt="mnsj">
+            <div class="description">
+                <p class="b-desc">Mi primera web, desarrollada en Vanilla Js, HTML y CSS. Aprendí a manipular el DOM, funciones, loops y condicionales, para hacer un cifrado César. </p>
+                <button class="button-demo"> <a class="link-b" href="https://lore0223.github.io/cdmx-2019-01-bc-core-am-cipher/src/" target=»_blank>Demo</a> </button>
+                <button class="button-cod"> <a class="link-b" href="https://github.com/lore0223/cdmx-2019-01-bc-core-am-cipher.git" target=»_blank>Código</a> </button>
+            </div>
         </div>
 
+    </main>
+    <main class="tools" id="tools-page">
 
+        <h1 id="title">Herramientas</h1>
 
-
-
+        <img class="single-tools-1 js " src="./assets/icons8-javascript-100.png ">
+        <img class="single-tools-1 html " src="./assets/icons8-html-5-100.png ">
+        <img class="single-tools-1 css " src="./assets/icons8-css3-100.png ">
+        <img class="single-tools-1 angu " src="./assets/icons8-angularjs-100.png ">
+        <img class="single-tools-2 fire " src="./assets/icons8-consola-de-google-firebase-100.png ">
+        <img class="single-tools-2 boot " src="./assets/icons8-oreja-100.png ">
+        <img class="single-tools-2 github " src="./assets/icons8-github-filled-100.png ">
+        <img class="single-tools-2 git " src="./assets/icons8-git-100.png ">
 
 
     </main>
-    <main id="Tools">
+    <footer id="footer">
+        <section class="contact">
+            <h1>Lorena Guido</h1>
+            <h5>¡Contáctame!</h5>
+            <h6>Cualquiera que sea la razón me gustará saber de ti</h6>
+            <span>55-7846-3709</span>
+            <div class="contact-icons">
+                <a href="lorenaguido33@gmail.com">
+                    <img src="./assets/icons8-nuevo-post-96.png" alt="">
+                </a>
+                <a href="https://github.com/lore0223?tab=repositories">
+                    <img src="./assets/github-foot.png" alt="">
+                </a>
+                <a href="www.linkedin.com/in/lorena-guido">
+                    <img src="./assets/icons8-linkedin-filled-100.png" alt="">
+                </a>
 
-    </main>
-    <footer>
+
+            </div>
+        </section>
 
     </footer>
 
 </body>
 
 
-<script src="main.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="main.js "></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
 
 </html>
