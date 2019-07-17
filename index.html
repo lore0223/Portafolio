@@ -7,14 +7,13 @@
     <title>Lorena Guido</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand">
             <img src="./assets/logo-lors2.png" alt="logo-lorena" style="height: 100px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,18 +47,13 @@
         </div>
     </nav>
 
-    <!-- <section class="init" id="home">
 
-        <img id="gif-lap" src="./assets/responsivelap.gif" alt="gif-lap">
-
-    </section> -->
-    <hr>
     <main class="page-aboutme" id="page-about-lors">
 
         <main class="about-me">
             <section class="animation-box slideExpandUp">
                 <img id="photo" width="300px" src="./assets/lore2.jpg"></img>
-                <article class="litte-description">
+                <article class="little-description">
                     <h1>
                         <a id="link" href="" class="typewrite" data-period="2000" data-type='[ "Hola, soy Lorena Guido.", "Developer decidida.", "Autodidacta.", "Dinámica." ]'>
                             <span class="wrap"></span>
@@ -90,7 +84,7 @@
             <img width="100%" src="./assets/com-rap.jpg" class="img-bq">
 
             <div class="description">
-                <p class="b-desc">Burger Queen es mi primera interacción con un Framework de JS, aprendí Angular, Type Script y CSS Grids, utilizé HTML 5.</p>
+                <p class="b-desc">Burger Queen es una app para tablets, está desarrollado con Angular, Typescript, CSS Grids y HTML 5.</p>
                 <button class="button-demo"><a class="link-b" href="https://burger-queen-36737.firebaseapp.com" target=»_blank>Demo</a></button>
                 <button class="button-cod"><a class="link-b" href="https://github.com/lore0223/CDMX007-fe-burger-queen.git" target=»_blank>Código</a></button>
             </div>
@@ -135,36 +129,63 @@
         </div>
 
     </main>
-    <main class="tools" id="tools-page">
-
-        <h1 id="title">Herramientas</h1>
-
-        <img class="single-tools-1 js " src="./assets/icons8-javascript-100.png ">
-        <img class="single-tools-1 html " src="./assets/icons8-html-5-100.png ">
-        <img class="single-tools-1 css " src="./assets/icons8-css3-100.png ">
-        <img class="single-tools-1 angu " src="./assets/icons8-angularjs-100.png ">
-        <img class="single-tools-2 fire " src="./assets/icons8-consola-de-google-firebase-100.png ">
-        <img class="single-tools-2 boot " src="./assets/icons8-oreja-100.png ">
-        <img class="single-tools-2 github " src="./assets/icons8-github-filled-100.png ">
-        <img class="single-tools-2 git " src="./assets/icons8-git-100.png ">
 
 
-    </main>
+    <section class="tools " id="tools-page">
+        <div class="bloque"></div>
+        <h3 id="title">Habilidades</h3>
+
+        <div class="skill-cards">
+            <div class="card border-dark mb-3 tech" style="max-width: 20rem;">
+                <div class="card-header title-card">Tech</div>
+                <div class="card-body text-dark">
+                    <ul>
+                        <li>Angular</li>
+                        <li>Typescript</li>
+                        <li>Javascript</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>Firebase</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="card border-dark mb-3 soft" style="max-width: 20rem;">
+                <div class="card-header title-card">Soft</div>
+                <div class="card-body text-dark">
+                    <ul>
+                        <li>Trabajo en equipo</li>
+                        <li>Metodología ágil</li>
+                        <li>Autoaprendizaje</li>
+                        <li>Comunicación</li>
+                        <li>Negociación</li>
+                        <li>Solución de problemas</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
     <footer id="footer">
         <section class="contact">
-            <h1>Lorena Guido</h1>
-            <h5>¡Contáctame!</h5>
-            <h6>Cualquiera que sea la razón me gustará saber de ti</h6>
+            <h4>Lorena Guido</h4>
+            <p>¡Platiquemos!</p>
             <span>55-7846-3709</span>
             <div class="contact-icons">
                 <a href="lorenaguido33@gmail.com">
-                    <img src="./assets/icons8-nuevo-post-96.png" alt="">
+                    <img width="50px" src="./assets/icons8-nuevo-post-96.png" alt="">
                 </a>
-                <a href="https://github.com/lore0223?tab=repositories">
-                    <img src="./assets/github-foot.png" alt="">
+                <a class="ml-5 mr-5" href="https://github.com/lore0223?tab=repositories">
+                    <img width="50px" src="./assets/github-foot.png" alt="">
                 </a>
                 <a href="https://www.linkedin.com/in/lorena-guido">
-                    <img src="./assets/icons8-linkedin-filled-100.png" alt="">
+                    <img width="50px" src="./assets/icons8-linkedin-filled-100.png" alt="">
                 </a>
 
 
