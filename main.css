@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
-.init {
+body {
     background: #F2DCC2;
 }
 
@@ -42,12 +42,7 @@
 .navbar-lore {
     margin-left: 50%;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    position: fixed;
-}
-
-.nav-color {
-    color: #A64468;
+    font-size: 17px;
 }
 
 .animation-box {
@@ -60,7 +55,7 @@
     border-radius: 2%;
 }
 
-.litte-description {
+.little-description {
     grid-column: 2;
     grid-row: 2;
     color: wheat;
@@ -198,22 +193,17 @@
 }
 
 .tools {
-    display: grid;
-    grid-template-columns: 10% 20% 20% 20% 20% 10%;
-    grid-template-rows: 5% 20% 32% 32% auto;
     background: #F2DCC2;
     height: 100vh;
 }
 
 #title {
-    font-family: 'Poiret One', cursive;
-    font-size: 275%;
-    grid-row: 2;
-    justify-self: center;
-    grid-column: 3/5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 200%;
     font-weight: bold;
     color: #A64468;
     text-decoration: underline #A64468;
+    text-align: center;
 }
 
 .single-tools-1 {
@@ -261,4 +251,39 @@
     display: none;
     background: #F2DCC2;
     color: #A64468;
+}
+
+ul {
+    list-style: none;
+}
+
+.title-card {
+    font-family: 'Raleway', sans-serif;
+    color: #A64468;
+    font-weight: bold;
+    font-size: large;
+}
+
+li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.skill-cards {
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin-top: 5%
+}
+
+.tech {
+    margin-left: 45%;
+}
+
+.soft {
+    margin-left: 10%
+}
+
+.bloque {
+    background: #F2DCC2;
+    height: 15%;
 }
