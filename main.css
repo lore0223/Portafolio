@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+
+
 body {
     background: #F2DCC2;
 }
@@ -287,3 +290,124 @@ li {
     background: #F2DCC2;
     height: 15%;
 }
+
+/* aqui empiezan los medias para diseño responsivo */
+
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 800px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) and (max-height: 360px) {}
+
+@media (max-width: 640px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 375px) {
+
+
+    .animation-box {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 2% 25% auto 2%;
+        background-color: #343a40;
+        grid-column: 2/3;
+        grid-row: 2;
+        border-radius: 2%;
+    }
+
+    #photo{
+        width: 100px;
+        border-radius: 50%;
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+        align-self: center; 
+    }
+
+    .typewrite {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .aboutme-desc{
+        font-size: .48rem;
+    }
+
+    .little-description{
+        grid-row: 3;
+    }
+
+    /*proyectos*/
+
+    .square{
+        width:75%;
+        height: 75%;
+        grid-template-rows: 5% 35% 5% 45% 5%;
+    }
+
+    .description {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 75% 25%;
+    }
+
+    .b-desc{
+        font-size: .45em;
+        line-height: 10px;
+
+    }
+
+    .img-cipher,
+    .log-tej,
+    .img-bq,
+    .pokemon-img{
+        height: 75%;
+    }
+
+    .link-b{
+        font-size: .5rem;
+    }
+
+    .cyber{
+        font-size: .7rem;
+    }
+
+    /* aqui esta la seccion de habilidades*/
+
+
+    #title{
+        font-size: 150%; 
+    }
+
+    .tech{
+        height: 90%;
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    .tech-abilities{
+        font-size: .7rem;
+        margin-left: -9%;
+        
+    }
+
+    .soft{
+        height: 90%;
+        width: 90%;
+    }
+
+    .soft-abilities{
+        font-size: .7rem;
+        margin-left: -12%;
+    }
+
+    
+    
+}
+
+
+  
